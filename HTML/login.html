@@ -1,15 +1,46 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <title>FLAVOR</title>
 </head>
 <body>
-    <h1>login</h1>
-    <form action="">
-        <input type="text" placeholder="usuario">
-        <input type="password" placeholder="contraseña">
-        <input type="submit" value="Ingresar">
+    <header class="head">
+         <a href="./index.html"><img src="./IMG/" alt="logohead" class="logoFLAVOR"></a>
+         <form action="./search-results.html" method="GET" class="buscarbarra">
+            <input type="text" name="buscar" placeholder="Buscar." required class="buscarbarra">
+            <button class="inbutton">Buscar</button>
+         </form>
+         <div class="usuario">
+            <a href="./login.html" class="usuariolog">Login</a>
+            <a href="./register.html" class="userlog">Registro</a>
+         </div>
+    </header>
+    <section class="usuario1">
+             <form action="./index.html" method="get" class="form_usuario">
+                <h1>Ingrese su sesion.</h1>
+                 <div>
+                     <label for="email">Escriba su email:</label>
+                     <input class="input1" type="email" id="email" name="email" value="" placeholder="Escriba un mail existente" required>
+                 </div>
+                 <div>
+                     <label for="contraseña">Escriba su contraseña</label>
+                     <input class="input1" type="password" id="contraseña" name="" value="" placeholder="Escriba su contraseña" required>
+                 </div>
+                 <div>
+                     <button class="button1" type="button">Ingresar</button>
+                 </div>
+                     <a href="./register.html" class="color">NO TENGO UNA CUENTA</a>
+             </form>
+     </section>
+    <footer>
+        <ul class="footer1">
+            <li>Alfredo Yabran</li>
+            <li>Lucas Boismoreau</li>
+            <li>Santiago Levy</li>
+        </ul>
+    </footer>
 </body>
 </html>
