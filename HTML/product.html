@@ -3,13 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/styles.css">
-    <title>Document</title>
+        <link rel="stylesheet" href="./CSS/styles.css">
+    <title>FLAVOR</title>
 </head>
 <body>
-    
-    
-    <footer>
+    <header class="header_index">
+         <a href="./index.html"><img src="IMG/logorosa.PNG" alt="logohead" class="logoFLAVOR"></a>
+         <form action="./search-results.html" method="GET" class="buscarbarra">
+            <input type="text" name="buscar" placeholder="Buscar." required class="buscarbarra">
+            <button class="inbutton">Buscar</button>
+         </form>
+         <div class="usuario">
+            <a href="./login.html" class="usuariolog">Login</a>
+            <a href="./register.html" class="userlog">Registro</a>
+         </div>
+    </header>
+    <article class="categoria">
+        <nav class="categor_nav">
+            <ul class="ul_categoria">
+                <li class="li_categoria"><a href="./category.html" class="a_categoria">Remeras</a></li>
+                <li class="li_categoria"><a href="./category.html" class="a_categoria">Buzos</a></li>
+                <li class="li_categoria"><a href="./category.html" class="a_categoria">Pantalones</a></li>
+                <li class="li_categoria"><a href="./category.html" class="a_categoria">gorras</a></li>
+            </ul>
+        <div class="body_index">
+             <span><h1 class="product_detalle1">Pantalon</h1></span>
+             <section class="section_detalle">
+             <div class="img_detalle">
+             <img src="IMG/cargo.png" alt="" class="buzo_detalleimg">
+        </div>
+        <div class="descripcion_detalle">
+            <h2 class="producti_detalle" >Pantalon oversize FLAVOR</h2>
+            <ul class="ul_detalle">
+                <li class="li_detalle"><b>Hecho de:</b>Algodon 100%</li>
+                <li class="product_detalle"><b>valoracion:</b>9,6/10</li>
+                <li class="product_detalle" ><b>Talles:</b>S,M,L y XL</li>
+                <li class="product_detalle" ><b>Precio:</b>20.000$</li>
+                <li class="product_detalle" ><b>Descripcion del producto:</b>Pantalon cargo oversize con elastico en los tobillos. Disponible en varios colores.</li>
+            <label for="talle">Elija su talle:</label>
+            <select name="talle" id="talle" class="select_talle">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+            </select>
+            <br>
+            <button class="boton_compra">Comprar</button>
+                <li class="product_detalle"><b>Stock:</b>1274 disponibles actualmente</li>
+                </ul>
+        </div>
+</section>
+        <div class="detalletags" >
+            <h3 class="tagstit">Tags</h3>
+            <p class="tagsdetalle">#pantalon #cargo #oversize #flavor #moda #tendencia #comoda #algodon</p>
+        </div>
+    <div class="comentariodetalles">
+        <h4>Deja tu reseña</h4>
+        <label for="usuario">Nombre de usuario</label>
+        <form action="" method="get">
+<input id="usuario" type="text" name="usuario" value="" placeholder="usuario" class="detalleinput">
+<button type="submit">Enviar</button>
+<button type="reset">Borrar</button>
+        </form>
+    </div>
+    <div class="reseña_detalle">
+        <label for="valoracion">Valoracion del 1 al 10</label>
+        <form action="" method="get">
+            <input type="number" name="valoracion" value="" placeholder="valoracion" class="detalleinput" min="1" max="10">
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar todo</button>
+          </form>
+    </div>
+</article>
+     <footer>
         <ul class="footer1">
             <li>Alfredo Yabran</li>
             <li>Lucas Boismoreau</li>
