@@ -1,20 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/styles.css">
-    <title>FLAVOR</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resultados de búsqueda</title>
+  <link rel="stylesheet" href="CSS/styles.css">
 </head>
 <body>
+  <header>
+    <a href="index.html" class="logo"><img src="IMG/logorosa.PNG" alt="logo"></a>
+    <form action="search-results.html" method="GET" class="buscarbarra">
+      <input type="text" name="buscar" placeholder="Buscar..." required>
+      <button type="submit">Buscar</button>
+    </form>
+    <div class="usuario">
+      <a href="login.html">Login</a>
+      <a href="register.html">Registro</a>
+    </div>
+  </header>
+
+  <main>
+    <h2>Resultados de búsqueda para: <span>"Zapatillas"</span></h2>
+
+    <section class="resultados">
+      <article class="producto">
+        <a href="product.html">
+          <img src="IMG/zapatillas1.png" alt="Zapatillas 1">
+          <h3>Zapatillas 1</h3>
+        </a>
+      </article>
+      <article class="producto">
+        <a href="product.html">
+          <img src="IMG/zapatillas2.png" alt="Zapatillas 2">
+          <h3>Zapatillas 2</h3>
+        </a>
+      </article>
+      <article class="producto">
+        <a href="product.html">
+          <img src="IMG/zapatillas3.png" alt="Zapatillas 3">
+          <h3>Zapatillas 3</h3>
+        </a>
+      </article>
+      <article class="producto">
+        <a href="product.html">
+          <img src="IMG/zapatillas4.png" alt="Zapatillas 4">
+          <h3>Zapatillas 4</h3>
+        </a>
+      </article>
+      <article class="producto">
+        <a href="product.html">
+          <img src="IMG/zapatillas5.png" alt="Zapatillas 5">
+          <h3>Zapatillas 5</h3>
+        </a>
+      </article>
+      <article class="producto">
+        <a href="product.html">
+          <img src="IMG/zapatillas6.png" alt="Zapatillas 6">
+          <h3>Zapatillas 6</h3>
+        </a>
+      </article>
+      <article class="producto">
+        <a href="product.html">
+          <img src="IMG/zapatillas7.png" alt="Zapatillas 7">
+          <h3>Zapatillas 7</h3>
+        </a>
+      </article>
+    </section>
+
     
-    <footer>
-        <ul class="footer1">
-            <li>Alfredo Yabran</li>
-            <li>Lucas Boismoreau</li>
-            <li>Santiago Levy</li>
-        </ul>
-    </footer>
+    <p class="no-resultados"></p>
+  </main>
 </body>
 </html>
+
 
