@@ -336,3 +336,15 @@ section .info_productz1, .info_productz2, .info_productz3, .info_productz4, .inf
     padding: 10px 0;
     margin-top: 20px;
 }
+@media (max-width: 480px) 
+{
+    body {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .buscarbarra {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
