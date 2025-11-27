@@ -1,33 +1,32 @@
-const formularios = document.querySelectorAll(".buscarbarra");
+document.addEventListener("DOMContentLoaded", function () {
+    let categorias = ["Remeras","Buzos","Pantalones","Gorras"];
+    let ulCat = document.querySelector(".categoryul") || document.querySelector(".ul_categoria");
 
-formularios.forEach(form => {
-    form.addEventListener("submit", function(e) {
-        const input = form.querySelector("input");
-        if (input.value === "") {
-            alert("Debes escribir algo para buscar.");
-            e.preventDefault();
+    if (ulCat) {
+        let html = "";
+        for (let i = 0; i < categorias.length; i++) {
+            let slug = categorias[i].toLowerCase();
+            html += '<li><a href="./category.html?name=' + slug + '">' + categorias[i] + '</a></li>';
         }
-    });
+        ulCat.innerHTML = html;
+    }
+
+    let imgs = document.querySelectorAll("img");
+    for (let i = 0; i < imgs.length; i++) {
+        let img = imgs[i];
+        img.addEventListener("mouseover", function () {
+            img.style.transform = "scale(1.05)";
+            img.style.transition = "0.2s";
+        });
+        img.addEventListener("mouseout", function () {
+            img.style.transform = "scale(1)";
+        });
+    }
+
+    let detalles = document.querySelectorAll("a.produinfo, a[class^='info_product']");
+    for (let i = 0; i < detalles.length; i++) {
+        detalles[i].addEventListener("click", function () {
+            alert("Se abrirá la página de detalle del producto.");
+        });
+    }
 });
-
-const botonLogin = document.querySelector(".button1");
-if (botonLogin) {
-    botonLogin.addEventListener("click", function () {
-        const email = document.getElementById("email").value;
-        const pass = document.getElementById("contraseña").value;
-
-        if (email === "" || pass === "") {
-            alert("Complete todos los campos.");
-        } else {
-            alert("Sesión iniciada.");
-        }
-    });
-}
-
-const botonCompra = document.querySelector(".boton_compra");
-if (botonCompra) {
-    botonCompra.addEventListener("click", function () {
-        const talle = document.getElementById("talle").value;
-        alert("Compraste el producto. Talle elegido: " + talle);
-    });
-}
